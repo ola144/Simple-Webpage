@@ -2,39 +2,5 @@
   font-family: Arial, sans-serif;
   min-height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.innerContainer {
-  background: #f5f7fa;
-  padding: 3rem 4rem;
-}
-
-button {
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background: #0077cc;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background: #005fa3;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 0.5rem 0;
-  background: white;
-  padding: 0.5rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 40vh;
 }

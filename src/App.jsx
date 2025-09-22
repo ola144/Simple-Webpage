@@ -1,50 +1,36 @@
-import React, { useState } from "react";
-import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
+import Task1 from "./components/Task1/Task1";
+import Task2 from "./components/Task2/Task2";
+import Navbar from "./components/Navbar/Navbar";
 
-function App() {
-  const products = [
-    { id: 1, name: "Laptop", price: 2500 },
-    { id: 2, name: "Phone", price: 800 },
-    { id: 3, name: "Headphones", price: 150 },
-    { id: 4, name: "Keyboard", price: 100 },
-    { id: 5, name: "Monitor", price: 600 },
-  ];
-
-  const [showAffordable, setShowAffordable] = useState(false);
-
-  // filter
-  const filteredProducts = showAffordable
-    ? products.filter((p) => p.price <= 1000)
-    : products;
-
-  // reduce
-  const totalPrice = filteredProducts.reduce((sum, p) => sum + p.price, 0);
-
-  // forEach (console log only)
-  filteredProducts.forEach((p) => console.log("Product name:", p.name));
-
+const Layout = () => {
   return (
-    <div className="container">
-      <div className="innerContainer">
-        <h1>React Array Methods Demo</h1>
-
-        <button onClick={() => setShowAffordable((prev) => !prev)}>
-          {showAffordable ? "Show All Products" : "Show Affordable (≤ $1000)"}
-        </button>
-
-        <h2>Products:</h2>
-        <ul>
-          {/* map */}
-          {filteredProducts.map((p) => (
-            <li key={p.id}>
-              {p.name} - ${p.price}
-            </li>
-          ))}
-        </ul>
-
-        <h3>Total Price: ${totalPrice}</h3>
+    <div className="">
+      <Navbar />
+      <div className="container">
+        <Outlet />
       </div>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Task1 />} />
+            <Route path="/task2" element={<Task2 />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 
