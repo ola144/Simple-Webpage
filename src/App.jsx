@@ -7,6 +7,7 @@ import {
 import Task1 from "./components/Task1/Task1";
 import Task2 from "./components/Task2/Task2";
 import Navbar from "./components/Navbar/Navbar";
+import Task3 from "./components/Task3/component/Task3";
 
 const Layout = () => {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Task1 />} />
             <Route path="/task2" element={<Task2 />} />
+            <Route path="/task3" element={<Task3 />} />
           </Route>
         </Routes>
       </Router>

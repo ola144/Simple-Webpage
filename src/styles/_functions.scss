@@ -1,0 +1,6 @@
+@use 'sass:color';
+
+// Slightly tint a color toward white for hover states
+@function hover-tint($c) {
+  @return color.mix(white, $c, 12%);
+}

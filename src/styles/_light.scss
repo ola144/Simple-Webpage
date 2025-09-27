@@ -1,0 +1,16 @@
+// Light theme token values
+$color-bg: #f7f8fb !default;
+$color-text: #111827 !default;
+$color-muted: #6b7280 !default;
+$color-primary: #1e3d8f !default;
+$color-card: #ffffff !default;
+$color-border: #e5e7eb !default;
+
+:root[data-theme='light'] {
+  --bg: #{$color-bg};
+  --text: #{$color-text};
+  --muted: #{$color-muted};
+  --primary: #{$color-primary};
+  --card: #{$color-card};
+  --border: #{$color-border};
+}

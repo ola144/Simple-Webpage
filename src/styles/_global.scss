@@ -1,0 +1,37 @@
+@use "../styles/variable" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark; // allow both
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  //   background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  //   max-width: 1100px;
+  margin: 0 auto;
+  padding: $space-6 $space-4;
+}
+
+.card-surface {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: $radius-lg;
+  box-shadow: $shadow;
+}
