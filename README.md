@@ -58,3 +58,52 @@ Click "Show Affordable (≤ $1000)" to filter the list.
 Watch the total price update based on the displayed products.
 
 Open the browser console to see product names logged via forEach.
+
+## TASK 4
+
+# Frontend-version-control-task-Oladimeji-Agbaje
+
+**Author:** Oladimeji Agbaje  
+**Project:** Vite + React simple layout (Header, Main, Footer) — used to demonstrate version control workflows.
+
+---
+
+## Purpose
+
+This repository is created to demonstrate version control skills: initializing a repository, working with branches, making commits, opening pull requests, performing code reviews, merging, reverting commits, and branch renaming.
+
+## Branch names & purpose
+
+- `main` - primary branch
+- `task4` - implements the task4 components (4 commits)
+- `task4-feature-footer` - implements Footer component and styles (5 commits)
+- `task4-footer` - renamed branch (was `task4-feature-footer`) to demonstrate branch rename flow
+
+## Git commands used most frequently (examples)
+
+- Branching and switching:
+
+  - `git checkout -b task4`
+  - `git checkout main`
+  - `git branch -m old-name new-name`
+
+- Committing:
+
+  - `git add <files>`
+  - `git commit -m "type(scope): message"`
+
+- Pushing & pulling:
+
+  - `git push -u origin task4`
+  - `git pull origin main`
+
+- Merging:
+
+  - `git merge --no-ff task4`
+  - or merge via GitHub PR UI
+
+- Remote branch rename:
+  - `git push origin --delete feature-footer`
+  - `git push -u origin feature-bottom`
+
+---
