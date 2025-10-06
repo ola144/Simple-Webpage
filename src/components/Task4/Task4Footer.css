@@ -1,15 +1,9 @@
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 .site-footer {
   border-top: 1px solid #eee;
   padding: 1rem 0;
   background: #fafafa;
   margin-top: 2rem;
   text-align: center;
-  color: var(--muted);
+  width: 100%;
   font-size: 0.95rem;
 }

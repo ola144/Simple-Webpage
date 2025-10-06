@@ -6,6 +6,8 @@
 
 .site-main {
   padding: 2rem 0;
+  margin-top: 10vh;
+  height: 100vh;
 }
 
 .site-main h2 {
