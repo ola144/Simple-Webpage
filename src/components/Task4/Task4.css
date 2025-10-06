@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-main {
+  padding: 2rem 0;
+}
+
+.site-main h2 {
+  margin-bottom: 0.5rem;
+}
+
+.site-main section {
+  margin-bottom: 1.5rem;
+}
