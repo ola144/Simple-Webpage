@@ -1,0 +1,150 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #4f46e5;
+  --success: #16a34a;
+  --danger: #dc2626;
+
+  .task5 {
+    padding-top: 15vh;
+    background: linear-gradient(180deg, var(--bg), #fff);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 10px;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .subtitle {
+    color: var(--muted);
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    cursor: pointer;
+    color: black;
+  }
+  .btn.primary {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  .input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e6e7eb;
+  }
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #eef2f7;
+  }
+  .list-left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .list-title {
+    font-weight: 600;
+  }
+  .list-title.done {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+  .small {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  .aside {
+    padding: 18px;
+    border-radius: 14px;
+  }
+  .progress-bar {
+    background: #eef2f7;
+    border-radius: 999px;
+    height: 12px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 12px;
+    background: var(--accent);
+    width: 0%;
+    transition: width 250ms ease;
+  }
+  .quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .slide-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .presentation-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    background: #f3f4f6;
+    padding-top: 15vh;
+  }
+  .presentation-card {
+    max-width: 980px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+  }
+  .export-btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--success);
+    color: white;
+    cursor: pointer;
+  }
+}
