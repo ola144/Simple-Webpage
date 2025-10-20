@@ -48,6 +48,10 @@ const Task5 = () => {
     localStorage.setItem("outcomes", JSON.stringify(outcomes));
   }, [outcomes]);
 
+  // derived
+  const completedCount = outcomes.filter((o) => o.done).length;
+  const progress = Math.round((completedCount / outcomes.length) * 100);
+
   // handlers
   function toggleDone(id) {
     setOutcomes((prev) =>
@@ -78,7 +82,6 @@ const Task5 = () => {
       (q) => quizAnswers[q.id] === q.answer
     ).length;
     alert(`Quiz finished — score: ${correct} / ${quizQuestions.length}`);
-    console.log(correct);
   }
 
   function startPresentation() {
@@ -117,7 +120,7 @@ const Task5 = () => {
     {
       title: "Learning Outcomes — Overview",
       content:
-        `<p>Total outcomes: ${outcomes.length}</p>` +
+        `<p>Total outcomes: ${outcomes.length} — Completed: ${completedCount} (${progress}%)</p>` +
         `<ul>${outcomes
           .map((o) => `<li>${o.done ? "✅" : "⬜"} ${o.title}</li>`)
           .join("")}</ul>`,
@@ -237,6 +240,10 @@ const Task5 = () => {
           </div>
 
           <div className="controls">
+            <div style={{ textAlign: "center" }}>
+              <div className="small">Progress</div>
+              <div style={{ fontWeight: 700 }}>{progress}%</div>
+            </div>
             <button className="btn primary" onClick={startPresentation}>
               Start Presentation
             </button>
@@ -378,6 +385,21 @@ const Task5 = () => {
                     Finish
                   </button>
                 )}
+              </div>
+            </div>
+
+            <div>
+              <h4 style={{ margin: "6px 0" }}>Progress</h4>
+              <div style={{ marginTop: 8 }}>
+                <div className="progress-bar">
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${progress}%` }}
+                  />
+                </div>
+                <div className="small" style={{ marginTop: 8 }}>
+                  {completedCount}/{outcomes.length} outcomes completed
+                </div>
               </div>
             </div>
           </aside>
