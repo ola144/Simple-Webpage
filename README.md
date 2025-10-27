@@ -106,4 +106,33 @@ This repository is created to demonstrate version control skills: initializing a
   - `git push origin --delete feature-footer`
   - `git push -u origin feature-bottom`
 
----
+## TASK 7
+
+# Presentation of Study / Practice of Learning Outcome
+
+### Topic: Using Styled Components in React
+
+## 🎯 Objective
+
+To learn how to use **Styled Components** for creating modular and reusable styles within React applications.
+
+## 🧠 What I Learned
+
+- How to install and import styled-components.
+- How to define reusable styled elements (e.g., `Button`, `Card`, `Container`).
+- How to apply conditional (dynamic) styling using props.
+- How to keep component styling scoped to individual components.
+
+## 💻 Technologies Used
+
+- React (Vite)
+- Styled Components
+- CSS-in-JS concept
+
+## 📸 Outcome
+
+The project demonstrates:
+
+- A simple dashboard UI with styled components.
+- Dynamic styles for primary/secondary buttons.
+- Clean structure for scalable component design.

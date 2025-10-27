@@ -9,7 +9,8 @@ import Task2 from "./components/Task2/Task2";
 import Navbar from "./components/Navbar/Navbar";
 import Task3 from "./components/Task3/component/Task3";
 import Task4 from "./components/Task4/Task4";
-import Task5 from "./components/Task5/Task5";
+import Task6 from "./components/Task6/Task6";
+import Task7 from "./components/Task7/Task7";
 
 const Layout = () => {
   return (
@@ -32,7 +33,8 @@ function App() {
             <Route path="/task2" element={<Task2 />} />
             <Route path="/task3" element={<Task3 />} />
             <Route path="/task4" element={<Task4 />} />
-            <Route path="/task5" element={<Task5 />} />
+            <Route path="/task6" element={<Task6 />} />
+            <Route path="/task7" element={<Task7 />} />
           </Route>
         </Routes>
       </Router>

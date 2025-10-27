@@ -11,7 +11,8 @@ const Navbar = () => {
         <NavLink to="/task2">Deliverable 2</NavLink>
         <NavLink to="/task3">Deliverable 3</NavLink>
         <NavLink to="/task4">Deliverable 4</NavLink>
-        <NavLink to="/task5">Deliverable 6</NavLink>
+        <NavLink to="/task6">Deliverable 6</NavLink>
+        <NavLink to="/task7">Deliverable 7</NavLink>
       </div>
     </nav>
   );

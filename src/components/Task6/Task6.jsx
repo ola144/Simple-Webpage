@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Task5.css";
+import "./Task6.css";
 
-const Task5 = () => {
+const Task6 = () => {
   // Sample data
   const initialOutcomes = [
     { id: 1, title: "Understand React components", done: false },
@@ -417,4 +417,4 @@ const Task5 = () => {
   );
 };
 
-export default Task5;
+export default Task6;
