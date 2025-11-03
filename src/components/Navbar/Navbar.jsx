@@ -13,6 +13,7 @@ const Navbar = () => {
         <NavLink to="/task4">Deliverable 4</NavLink>
         <NavLink to="/task6">Deliverable 6</NavLink>
         <NavLink to="/task7">Deliverable 7</NavLink>
+        <NavLink to="/task8">Deliverable 8</NavLink>
       </div>
     </nav>
   );

@@ -1,0 +1,42 @@
+.app-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-container h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.submitted-table {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 40px 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.submitted-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.submitted-table th,
+.submitted-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.submitted-table th {
+  background-color: #f4f4f4;
+}
+
+.log-btn {
+  margin-top: 20px;
+}

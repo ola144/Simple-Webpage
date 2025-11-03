@@ -136,3 +136,29 @@ The project demonstrates:
 - A simple dashboard UI with styled components.
 - Dynamic styles for primary/secondary buttons.
 - Clean structure for scalable component design.
+
+## TASK 8
+
+## 🚀 Features
+
+# 6 Reusable Components
+
+### Button – styled, reusable button
+
+### InputField – configurable input with label
+
+### Checkbox – simple labeled checkbox
+
+### Form – combines input, checkbox, and button for data collection
+
+### Table – reusable data display component
+
+### DataTable – pre-filled example using the reusable Table
+
+# Reusable & Modular Design — Each component has its own file and CSS style.
+
+# Pure CSS Styling — Clean and responsive without using Tailwind, Bootstrap, or external UI libraries.
+
+# Dynamic Rendering — Submitted form data dynamically updates the user table.
+
+# Fully Functional Example Page
