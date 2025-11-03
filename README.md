@@ -162,3 +162,13 @@ The project demonstrates:
 # Dynamic Rendering — Submitted form data dynamically updates the user table.
 
 # Fully Functional Example Page
+
+# 🧰 Technologies Used
+
+### React (Vite or CRA)
+
+### JavaScript (ES6+)
+
+### CSS3 (Pure styling)
+
+### Hooks (useState)
